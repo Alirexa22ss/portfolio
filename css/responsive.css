@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* =========================================
    RESPONSIVE
 ========================================= */
@@ -303,4 +304,335 @@ SMALL MOBILE
     .header-button{
         display:none;
     }
+=======
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width:1000px){
+
+    /* ===== ABOUT ===== */
+
+    .about-container{
+        grid-template-columns:1fr;
+        gap:60px;
+    }
+
+    .about-image{
+        order:1;
+        text-align:center;
+    }
+
+    .about-content{
+        order:2;
+        text-align:center;
+    }
+/* ===== SKILLS ===== */
+
+.skills-grid{
+    grid-template-columns:1fr;
+}
+/* ===== PROJECTS ===== */
+
+.projects-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+/* ===== CONTACT ===== */
+
+.contact-grid{
+    grid-template-columns: 1fr;
+    gap:40px;
+}
+}
+/* =========================================
+MOBILE
+========================================= */
+.menu-toggle{
+    display:none;
+}
+@media (max-width:700px){
+   .menu-toggle{
+    display:flex !important;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:5px;
+    width:44px;
+    height:44px;
+    padding:0;
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:12px;
+    background:#161b22;
+    cursor:pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+}
+
+.main-nav{
+    display:none;
+    position:absolute;
+    top:80px;
+    right:15px;
+    width:calc(100% - 30px);
+    max-width:350px;
+    background:#161b22;
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:16px;
+    padding:20px;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+    box-shadow:0 15px 40px rgba(0,0,0,.3);
+    box-sizing:border-box;
+}
+
+.main-nav.is-open{
+    display:flex;
+}
+    .hero{
+    padding:60px 20px;
+}
+
+.hero-grid{
+    grid-template-columns:1fr;
+    gap:40px;
+}
+
+.hero-content{
+    text-align:center;
+}
+
+.hero-buttons{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.hero-content h1{
+    font-size:42px;
+    line-height:1.4;
+}
+
+.hero-content p{
+    font-size:15px;
+}
+/* ===== ABOUT ===== */
+
+.about{
+    padding:80px 0;
+}
+
+.about-image img{
+    width:280px;
+}
+
+.about-title{
+    font-size:32px;
+}
+
+.about-text{
+    font-size:15px;
+    text-align:center;
+}
+/* ===== SKILLS ===== */
+
+.skills{
+    padding:80px 0;
+}
+
+.skill-card{
+    padding:20px;
+}
+/* ===== PROJECTS ===== */
+
+.projects{
+    padding:80px 0;
+}
+
+.projects-grid{
+    grid-template-columns:1fr;
+}
+/* ===== CONTACT ===== */
+
+.contact{
+    padding:80px 0;
+}
+
+.contact-grid{
+    grid-template-columns:1fr;
+    gap:30px;
+}
+
+.contact-item{
+    padding:20px;
+}
+
+.contact-form{
+    padding:25px;
+}
+/* ===== FOOTER ===== */
+
+.site-footer{
+    padding:30px 0;
+}
+
+.footer-content{
+    flex-direction:column;
+    text-align:center;
+    gap:15px;
+}
+/* CONTACT MOBILE */
+.contact {
+    padding: 70px 0;
+}
+
+.contact-info {
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.contact-form {
+    padding: 25px 20px;
+}
+
+.contact-item {
+    padding: 20px;
+}
+/* =========================================
+SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px){
+
+    .container{
+        width: 92%;
+    }
+
+    .site-header{
+        padding: 15px 0;
+    }
+
+    .logo{
+        font-size: 20px;
+    }
+
+    .menu-toggle{
+        width: 42px;
+        height: 42px;
+    }
+
+    .hero{
+        padding: 45px 0;
+    }
+
+    .hero-content h1{
+        font-size: 38px;
+        line-height: 1.5;
+    }
+
+    .hero-content p{
+        font-size: 15px;
+        line-height: 2;
+    }
+
+    .hero-buttons{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-buttons .btn{
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-image-card{
+        border-radius: 20px;
+    }
+
+    .section-title h2{
+        font-size: 28px;
+    }
+
+    .contact{
+        padding: 55px 0;
+    }
+
+    .contact-item{
+        padding: 18px;
+    }
+
+    .contact-form{
+        padding: 20px 15px;
+    }
+
+    .footer-container{
+        gap: 25px;
+    }
+
+}
+/* ================= MOBILE MENU ================= */
+
+@media (max-width: 768px){
+
+    .menu-toggle{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        width:44px;
+        height:44px;
+        border:0;
+        border-radius:10px;
+        background:rgba(255,119,0,.12);
+        color:#ff7700;
+        font-size:24px;
+        cursor:pointer;
+    }
+
+    .main-nav{
+        display:none;
+        width:100%;
+        flex-direction:column;
+        gap:12px;
+        padding:15px 0;
+    }
+
+    .main-nav.is-open{
+        display:flex;
+    }
+
+    .header-inner{
+        flex-wrap:wrap;
+    }
+
+    .header-button{
+        display:none;
+    }
+}
+@media (max-width:700px){
+
+    html,
+    body{
+        width:100%;
+        max-width:100%;
+        overflow-x:hidden;
+    }
+
+    *,
+    *::before,
+    *::after{
+        box-sizing:border-box;
+    }
+
+    img{
+        max-width:100%;
+        height:auto;
+    }
+
+>>>>>>> e1b1d86 (Update portfolio website)
 }
