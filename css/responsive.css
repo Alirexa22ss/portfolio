@@ -576,63 +576,56 @@ SMALL MOBILE
     }
 
 }
-/* ================= MOBILE MENU ================= */
+/* ================= MOBILE FIX ================= */
 
-@media (max-width: 768px){
-
-    .menu-toggle{
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        width:44px;
-        height:44px;
-        border:0;
-        border-radius:10px;
-        background:rgba(255,119,0,.12);
-        color:#ff7700;
-        font-size:24px;
-        cursor:pointer;
-    }
-
-    .main-nav{
-        display:none;
-        width:100%;
-        flex-direction:column;
-        gap:12px;
-        padding:15px 0;
-    }
-
-    .main-nav.is-open{
-        display:flex;
-    }
-
-    .header-inner{
-        flex-wrap:wrap;
-    }
-
-    .header-button{
-        display:none;
-    }
-}
-@media (max-width:700px){
+@media (max-width: 768px) {
 
     html,
-    body{
-        width:100%;
-        max-width:100%;
-        overflow-x:hidden;
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
     *,
     *::before,
-    *::after{
-        box-sizing:border-box;
+    *::after {
+        box-sizing: border-box;
     }
 
-    img{
-        max-width:100%;
-        height:auto;
+    img {
+        max-width: 100%;
+        height: auto;
     }
 
+<<<<<<< HEAD
 >>>>>>> e1b1d86 (Update portfolio website)
+=======
+    .header-inner {
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border: 0;
+        border-radius: 10px;
+        background: rgba(255, 119, 0, 0.12);
+        color: #ff7700;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .main-nav {
+        display: none;
+        width: 100%;
+    }
+
+    .main-nav.is-open {
+        display: flex;
+    }
+>>>>>>> edbee32 (Fix mobile responsive menu)
 }
