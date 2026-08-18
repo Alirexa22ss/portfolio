@@ -27,8 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
     mainNav.classList.toggle("open", isOpen);
     mainNav.classList.toggle("active", isOpen);
 
-    mainNav.style.display = isOpen ? "flex" : "none";
-
     menuToggle.classList.toggle("active", isOpen);
     menuToggle.setAttribute("aria-expanded", String(isOpen));
 });
