@@ -407,3 +407,42 @@ img {
     }
 
 }
+/* ===== MOBILE HERO FIX ===== */
+@media (max-width: 900px) {
+
+    .hero {
+        padding-top: 100px;
+        padding-bottom: 70px;
+        overflow: hidden;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: clamp(38px, 11vw, 52px);
+        line-height: 1.35;
+        word-break: normal;
+    }
+
+    .hero p {
+        font-size: 16px;
+        line-height: 2;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+}
