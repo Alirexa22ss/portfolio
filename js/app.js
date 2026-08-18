@@ -21,11 +21,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const mainNav = document.querySelector(".main-nav");
 
     if (menuToggle && mainNav) {
-        menuToggle.addEventListener("click", () => {
-            const isOpen = mainNav.classList.toggle("is-open");
-            menuToggle.classList.toggle("active", isOpen);
-            menuToggle.setAttribute("aria-expanded", String(isOpen));
-        });
+       menuToggle.addEventListener("click", () => {
+    const isOpen = mainNav.classList.toggle("is-open");
+
+    mainNav.classList.toggle("open", isOpen);
+    mainNav.classList.toggle("active", isOpen);
+
+    mainNav.style.display = isOpen ? "flex" : "none";
+
+    menuToggle.classList.toggle("active", isOpen);
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+});
 
         mainNav.querySelectorAll("a").forEach(link => {
             link.addEventListener("click", () => {
