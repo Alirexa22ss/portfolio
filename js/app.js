@@ -16,30 +16,42 @@ document.addEventListener("DOMContentLoaded", () => {
         window.addEventListener("scroll", updateHeader, { passive: true });
     }
 
-    // Mobile menu
-    const menuToggle = document.querySelector(".menu-toggle");
-    const mainNav = document.querySelector(".main-nav");
+   // Mobile menu
+const menuToggle = document.querySelector(".menu-toggle");
+const mainNav = document.querySelector(".main-nav");
 
-    if (menuToggle && mainNav) {
-       menuToggle.addEventListener("click", () => {
-    const isOpen = mainNav.classList.toggle("is-open");
+if (menuToggle && mainNav) {
 
-    mainNav.classList.toggle("open", isOpen);
-    mainNav.classList.toggle("active", isOpen);
+    menuToggle.addEventListener("click", () => {
 
-    menuToggle.classList.toggle("active", isOpen);
-    menuToggle.setAttribute("aria-expanded", String(isOpen));
-});
+        const isOpen = mainNav.classList.toggle("is-open");
 
-        mainNav.querySelectorAll("a").forEach(link => {
-            link.addEventListener("click", () => {
-                mainNav.classList.remove("is-open");
-                menuToggle.classList.remove("active");
-                menuToggle.setAttribute("aria-expanded", "false");
-            });
+        menuToggle.classList.toggle("active", isOpen);
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            String(isOpen)
+        );
+
+    });
+
+    mainNav.querySelectorAll("a").forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            mainNav.classList.remove("is-open");
+            menuToggle.classList.remove("active");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
         });
-    }
 
+    });
+
+}
     // Smooth internal navigation
     document.querySelectorAll('a[href^="#"]').forEach(link => {
         link.addEventListener("click", event => {

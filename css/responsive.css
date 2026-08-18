@@ -49,14 +49,13 @@ img {
         z-index: 2000;
     }
 
-    .main-nav.is-open,
-    .main-nav.open,
-    .main-nav.active {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-        pointer-events: auto;
-    }
+   .main-nav.is-open {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+    pointer-events: auto !important;
+    display: flex !important;
+}
 
     .main-nav a {
         padding: 12px 14px;
